@@ -1,0 +1,69 @@
+
+:root {
+  --background: #152938;
+  --background-box: #FCFCFC;
+  --unselected: #BCCED9;
+  --selected: #FDA214;
+  --sub-text: #7191A5;
+  --padding: 56px 56px 56px 56px;
+}
+
+body{
+  background: var(--background);
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/* setting */
+.setting .title{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.setting .wrap_box{
+  width: 654px;
+  height: 599px;
+  margin: 0 auto;
+  padding: var(--padding);
+  background: var(--background-box);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.setting .wrap_box h3{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--sub-text);
+  margin-bottom: 16px;
+}
+
+.setting .wrap_box:not(.theme) h3{
+  margin-top: 32px;
+}
+
+.setting .wrap_box label{
+  display: inline-block;
+  width: 256px;
+  height: 52px;
+  background: var(--unselected);
+  text-align: center;
+  line-height: 52px;
+  border-radius: 26px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--background-box);
+}
+
+.setting .wrap_box .theme label:last-child, .setting .wrap_box .grid label:last-child{
+  margin-left: 30px;
+}
+
+.setting .wrap_box input[type="checkbox"]{
+  visibility: hidden;
+  position: absolute;
+}
+
+.game, .end{
+  display: none;
+}
